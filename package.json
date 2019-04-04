@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha"
   },
-  "author": "",
+  "author": "Maykin Media",
   "license": "MIT",
   "dependencies": {
     "postcss": "^7.0.14"
@@ -16,5 +16,22 @@
     "mocha": "^6.0.2",
     "sinon": "^7.3.0",
     "sinon-chai": "^3.3.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maykinmedia/postcss-selector-lint.git"
+  },
+  "keywords": [
+    "postcss",
+    "css",
+    "selector",
+    "lint"
+  ],
+  "bugs": {
+    "url": "https://github.com/maykinmedia/postcss-selector-lint/issues"
+  },
+  "homepage": "https://github.com/maykinmedia/postcss-selector-lint#readme"
 }
