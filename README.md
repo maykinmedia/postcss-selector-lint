@@ -1,9 +1,12 @@
 # PostCSS Selector Lint
 
- > "Only use class names in selectors, no IDs or HTML tag names." -- kandl-style-guide.
+`🐱 Please don't use CSS selectors of type "id" in global scope (stylesheet.css:11,1 "#header").`
 
 PostCSS Selector Lint warns about disallowed selector types in either 'global' or 'local' scope. This helps preventing
 scope pollution by warning about non-nested type (tag) selectors which might have unwanted side-effects.
+
+ > "Only use class names in selectors, no IDs or HTML tag names." -- kandl-style-guide.
+
 
 The configuration of this linter is fully customizable.
 
