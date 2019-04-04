@@ -1,0 +1,20 @@
+{
+  "name": "postcss-selector-lint",
+  "version": "1.0.0",
+  "description": "Allows/disallows using certain selector types (type, .class, #id, *universal [attribute] :pseudo) at either global or local level (.global > .local).",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "postcss": "^7.0.14"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "sinon": "^7.3.0",
+    "sinon-chai": "^3.3.0"
+  }
+}
