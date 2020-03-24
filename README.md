@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/maykinmedia/postcss-selector-lint.svg?branch=master)](https://travis-ci.org/maykinmedia/postcss-selector-lint)
+
 # PostCSS Selector Lint
 
 `🐱 Please don't use CSS selectors of type "id" in global scope (stylesheet.css:11,1 "#header").`
@@ -110,5 +112,5 @@ Pull requests and stars are always welcome. For bugs and feature requests, [plea
 
 ## License
 
-Copyright © 2019 [Maykin Media](https://www.maykinmedia.nl/)
+Copyright © 2020 [Maykin Media](https://www.maykinmedia.nl/)
 Licensed under the MIT license.
