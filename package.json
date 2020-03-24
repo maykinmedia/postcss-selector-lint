@@ -24,6 +24,7 @@
   },
   "keywords": [
     "postcss",
+    "postcss-plugin",
     "css",
     "selector",
     "lint"
