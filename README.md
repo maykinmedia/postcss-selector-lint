@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/maykinmedia/postcss-selector-lint.svg?branch=master)](https://travis-ci.org/maykinmedia/postcss-selector-lint)
+
 # PostCSS Selector Lint
 
 `🐱 Please don't use CSS selectors of type "id" in global scope (stylesheet.css:11,1 "#header").`
