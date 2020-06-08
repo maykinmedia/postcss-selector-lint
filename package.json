@@ -1,6 +1,6 @@
 {
   "name": "postcss-selector-lint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Allows/disallows using certain selector types (type, .class, #id, *universal [attribute] :pseudo) at either global or local level (.global > .local).",
   "main": "src/index.js",
   "scripts": {

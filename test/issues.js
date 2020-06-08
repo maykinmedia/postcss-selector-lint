@@ -26,4 +26,31 @@ describe('postcss-selector-lint (issues)', () => {
             })
             .catch(e => assert.notOk(e.message));
     });
+
+    it('issue #3: Pseudo configuration is ignored.', () => {
+        const config = {
+            global: {
+                pseudo: true,
+            },
+
+            local: {
+                pseudo: true,
+            },
+        };
+
+        const input = `
+            :foo {
+            }
+
+            .foo :bar {
+            }
+        `;
+
+        return postcss([selectorLint(config)]).process(input, {from: undefined})
+            .then(result => {
+                const warnings = result.warnings();
+                assert.lengthOf(warnings, 0);
+            })
+            .catch(e => assert.notOk(e.message));
+    });
 });
