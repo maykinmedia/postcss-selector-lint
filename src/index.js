@@ -17,7 +17,7 @@ module.exports = postcss.plugin('postcss-selector-lint', userConfig => {
             attribute: false,
 
             // Pseudo
-            psuedo: false,
+            pseudo: false,
         },
 
         local: {
@@ -29,7 +29,7 @@ module.exports = postcss.plugin('postcss-selector-lint', userConfig => {
             attribute: true,
 
             // Pseudo
-            psuedo: true,
+            pseudo: true,
         },
 
         options: {
@@ -38,13 +38,18 @@ module.exports = postcss.plugin('postcss-selector-lint', userConfig => {
         }
     };
 
+
     // Apply user configuration.
     if (typeof userConfig === 'object') {
+        if (typeof userConfig.global === 'object') {
+            Object.assign(config.global, userConfig.global);
+        }
+        if (typeof userConfig.local === 'object') {
+            Object.assign(config.local, userConfig.local);
+        }
         if (typeof userConfig.options === 'object') {
             Object.assign(config.options, userConfig.options);
-            userConfig.options = config.options;
         }
-        Object.assign(config, userConfig);
     }
 
     /**
